@@ -1,0 +1,120 @@
+beast-splitter (3.8.0) stable; urgency=medium
+
+  * Add support for verbatim (v/V) mode
+  * Add support for 1-bit FEC, required when there is a mix of verbatim and
+    non-verbatim clients
+  * Only send settings messages upstream when the requested settings have
+    actually changed
+
+ -- Oliver Jowett <oliver.jowett@flightaware.com>  Mon, 30 Dec 2019 22:12:47 +0800
+
+beast-splitter (3.7.2) stable; urgency=medium
+
+  * Fix hardware flow control setting
+  * Build automation tweaks
+
+ -- Eric Tran <eric.tran@flightaware.com>  Mon, 09 Sep 2019 02:07:00 -6000
+
+beast-splitter (3.7.1) stable; urgency=medium
+
+  * No-change release for PiAware 3.7.1
+
+ -- Eric Tran <eric.tran@flightaware.com>  Mon, 15 Apr 2019 01:03:00 -6000
+
+beast-splitter (3.7.0.1) stable; urgency=medium
+
+  * No-change release for PiAware 3.7.0.1
+
+ -- Eric Tran <eric.tran@flightaware.com>  Wed, 03 Apr 2019 11:27:00 -6000
+
+beast-splitter (3.7.0) stable; urgency=medium
+
+  * Move start-beast-splitter into /usr/share
+  * Release for PiAware 3.7.0
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Thu, 21 Mar 2019 22:56:23 +0000
+
+beast-splitter (3.6.3) stable; urgency=medium
+
+  * Skip 3.6.2 to keep versions in sync with PiAware
+  * Build automation
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Tue, 11 Sep 2018 14:59:07 +0100
+
+beast-splitter (3.6.1) stable; urgency=medium
+
+  * No-change release for PiAware 3.6.1 / jessie backport versioning
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Mon, 16 Jul 2018 15:31:12 +0100
+
+beast-splitter (3.6.0) stable; urgency=medium
+
+  * No-change release for PiAware 3.6.0
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Fri, 11 May 2018 15:42:40 +0100
+
+beast-splitter (3.5.0) stable; urgency=medium
+
+  * No-change release for PiAware 3.5.0
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Mon, 03 Apr 2017 18:20:33 +0100
+
+beast-splitter (3.4.0) stable; urgency=medium
+
+  * No-change release for PiAware 3.4.0
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Thu, 09 Feb 2017 17:47:23 +0000
+
+beast-splitter (3.3.0) stable; urgency=medium
+
+  * Minor tweak to how settings are logged.
+  * Support for forwarding type 5 (radarcape position) messages
+  * Rebuild for PiAware 3.3.0
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Mon, 16 Jan 2017 17:01:01 +0000
+
+beast-splitter (3.2.0) stable; urgency=medium
+
+  * When handling radarcape-style input, require a status message regularly
+    else assume the input is dead.
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Wed, 26 Oct 2016 00:05:08 +0100
+
+beast-splitter (3.1.0) stable; urgency=medium
+
+  * No-change release for PiAware 3.1.0
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Thu, 22 Sep 2016 17:12:00 +0100
+
+beast-splitter (3.0.3) stable; urgency=medium
+
+  * No-change release for PiAware 3.0.3
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Mon, 01 Aug 2016 12:22:19 +0100
+
+beast-splitter (3.0.2) stable; urgency=medium
+
+  * Release for PiAware 3.0.2
+  * Portability fixes for newer libstdc++ versions
+  * Work around some (misbuilt?) Boost versions that don't support hardware
+    flow control
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Wed, 27 Jul 2016 17:32:20 +0100
+
+beast-splitter (3.0.1) stable; urgency=medium
+
+  * Release to github
+  * Add support for network input
+  * Improved logging about setting changes
+  * Drop hotplug support (it's a bit fragile), require explicit configuration
+  * Don't wait for a full 512-byte buffer before processing input commands
+  * When emulating GPS timestamps from 12MHz, set the emulation bit in status
+    messages
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Fri, 15 Jul 2016 13:58:56 +0100
+
+beast-splitter (3.0~flightfeeder) stable; urgency=medium
+
+  * Initial release.
+
+ -- Oliver Jowett <oliver@mutability.co.uk>  Fri, 08 Jan 2016 22:10:20 +0000
